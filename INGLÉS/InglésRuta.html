@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Cálculo: Plan de Inglés</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for a spreadsheet look */
+        th, td {
+            border: 1px solid #e2e8f0; /* slate-200 */
+            padding: 0.75rem; /* p-3 */
+        }
+        th {
+            background-color: #f8fafc; /* slate-50 */
+            font-weight: 600; /* font-semibold */
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .activity-col {
+            width: 40%;
+            min-width: 250px;
+        }
+        .duration-col {
+            width: 15%;
+            min-width: 100px;
+        }
+        .day-col {
+            width: 6%;
+            min-width: 40px;
+            text-align: center;
+        }
+        input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 p-4 sm:p-6 md:p-8">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold text-slate-900 mb-1">📊 Hoja de Cálculo: Plan de Inglés Semanal</h1>
+            <p class="text-slate-600">Usa esta tabla para dar seguimiento a tus 4 horas de estudio diario. Marca la casilla de cada actividad que completes.</p>
+        </div>
+        
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-sm">
+                <thead>
+                    <tr>
+                        <th class="text-left">Bloque</th>
+                        <th class="text-left activity-col">Actividad</th>
+                        <th class="text-left duration-col">Duración</th>
+                        <th class="day-col">L</th>
+                        <th class="day-col">M</th>
+                        <th class="day-col">X</th>
+                        <th class="day-col">J</th>
+                        <th class="day-col">V</th>
+                        <th class="day-col">S</th>
+                        <th class="day-col">D</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <!-- Bloque 1 -->
+                    <tr class="bg-slate-50 font-semibold">
+                        <td colspan="3">Bloque 1: Fundamentos</td>
+                        <td colspan="7" class="text-right text-slate-500">1h 45m</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>🚀 Calentamiento: Duolingo (1-2 lecciones)</td>
+                        <td>15 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>📚 Gramática: Lección en Busuu</td>
+                        <td>60 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>✍️ Notas: Apuntes a mano de la lección</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>🗣️ Escritura: Ejercicio en Busuu</td>
+                        <td>30 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td>📝 Frases: Escribir 5-10 frases propias</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>☕ Descanso</td>
+                        <td>15-30 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+
+                    <!-- Bloque 2 -->
+                    <tr class="bg-slate-50 font-semibold">
+                        <td colspan="3">Bloque 2: Comprensión</td>
+                        <td colspan="7" class="text-right text-slate-500">1h 15m</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>🍎 Vocabulario: Lecciones temáticas</td>
+                        <td>30 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>📖 Contexto: Leer "Historia" de Duolingo</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="pl-8">▶️ Listening Activo (Video 5-10 min)</td>
+                        <td>45 min</td>
+                        <td colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="pl-12">👂 1ª Escucha: Sin subtítulos</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td class="pl-12">🧐 2ª Escucha: Con subtítulos</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td class="pl-12">🗣️ 3ª Escucha: Pronunciación</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+
+                    <!-- Bloque 3 -->
+                    <tr class="bg-slate-50 font-semibold">
+                        <td colspan="3">Bloque 3: Aplicación</td>
+                        <td colspan="7" class="text-right text-slate-500">1h</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>📰 Lectura: Leer texto en voz alta</td>
+                        <td>30 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>💡 Resumen: Resumir idea principal</td>
+                        <td>(incl.)</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>👥 Speaking: Shadowing (imitar audio)</td>
+                        <td>15 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td>🎙️ Speaking: Hablar solo</td>
+                        <td>15 min</td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                        <td class="day-col"><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
